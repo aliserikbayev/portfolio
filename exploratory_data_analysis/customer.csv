@@ -1,0 +1,63 @@
+Family_size,Occupation,Marital_Status,Feedback,count(Feedback)
+3,Student,Single,Positive,56
+2,Student,Single,Positive,43
+4,Student,Single,Positive,36
+5,Student,Single,Positive,25
+2,Employee,Single,Positive,15
+3,Employee,Married,Positive,15
+1,Student,Single,Positive,13
+2,Employee,Married,Positive,10
+3,Student,Single,Negative ,9
+2,Student,Single,Negative ,9
+4,Employee,Single,Positive,9
+3,Employee,Single,Positive,8
+4,Employee,Married,Positive,8
+5,Employee,Married,Positive,8
+3,Self Employeed,Single,Positive,8
+6,Student,Single,Positive,7
+4,Employee,Married,Negative ,6
+2,Employee,Single,Negative ,5
+5,Employee,Married,Negative ,5
+3,Self Employeed,Married,Positive,5
+6,Self Employeed,Married,Positive,5
+2,Self Employeed,Single,Positive,5
+2,Student,Married,Positive,4
+5,House wife,Married,Positive,4
+2,Self Employeed,Prefer not to say,Positive,4
+3,Employee,Single,Negative ,4
+6,Employee,Married,Positive,4
+2,Self Employeed,Married,Positive,3
+6,Self Employeed,Married,Negative ,3
+3,Self Employeed,Married,Negative ,3
+5,Self Employeed,Married,Negative ,3
+6,Self Employeed,Single,Positive,3
+3,Self Employeed,Single,Negative ,3
+6,Employee,Married,Negative ,3
+3,House wife,Married,Positive,2
+5,Self Employeed,Married,Positive,2
+1,Employee,Married,Positive,2
+5,Student,Single,Negative ,2
+2,Employee,Married,Negative ,2
+6,House wife,Married,Positive,2
+1,Self Employeed,Married,Negative ,2
+1,Employee,Prefer not to say,Negative ,2
+3,Employee,Prefer not to say,Negative ,2
+5,Self Employeed,Single,Positive,1
+4,Student,Single,Negative ,1
+5,Employee,Single,Positive,1
+5,House wife,Prefer not to say,Negative ,1
+4,Self Employeed,Married,Negative ,1
+2,Self Employeed,Married,Negative ,1
+5,Employee,Prefer not to say,Positive,1
+1,Self Employeed,Single,Positive,1
+3,Student,Married,Positive,1
+1,Employee,Prefer not to say,Positive,1
+6,Employee,Single,Positive,1
+1,Employee,Single,Negative ,1
+4,Self Employeed,Married,Positive,1
+3,Employee,Married,Negative ,1
+4,Employee,Prefer not to say,Positive,1
+1,Employee,Married,Negative ,1
+5,Student,Married,Positive,1
+1,Employee,Single,Positive,1
+6,Employee,Single,Negative ,1

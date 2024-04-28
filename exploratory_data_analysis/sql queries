@@ -1,0 +1,50 @@
+
+--Customer:
+select Family_size, Occupation, Marital_Status, Feedback, COUNT(Feedback)
+from PrevTable
+group by  Feedback, Family_size, Occupation, Marital_Status
+order  by count(feedback) DESC
+
+
+--Occupation_Feedback
+SELECT 
+    Occupation,
+    Feedback,
+    (COUNT(Feedback) * 100.0 / SUM(COUNT(Feedback)) OVER (PARTITION BY Occupation)) AS Percentage_of_Feedback
+FROM  
+    PrevTable
+GROUP BY 
+    Occupation, Feedback
+ORDER BY Percentage_of_Feedback DESC
+
+
+--Households_Feedback
+SELECT Family_size, Pin_code, COUNT(Pin_code) as Pin_code_instances, Feedback
+FROM PrevTable
+GROUP BY Pin_code, Feedback, Family_size
+ORDER BY Pin_code_instances DESC
+
+--Education_Feedback
+SELECT 
+    Educational_Qualifications,
+    (COUNT(Feedback) * 100.0 / SUM(COUNT(Feedback)) OVER (PARTITION BY Educational_Qualifications)) as Relative_Feedback,
+    Feedback
+FROM 
+    PrevTable
+GROUP BY 
+    Educational_Qualifications, Feedback
+ORDER BY Relative_Feedback DESC
+
+--Family_size_Output
+select Family_Size, Output, (COUNT(Output) * 100.0 / SUM(COUNT(Output)) OVER (PARTITION BY Family_Size)) AS Family_size_Output
+From PrevTable
+GROUP BY Family_Size, Output
+ORDER BY Family_Size 
+
+
+--Output_Feedback
+select Output, Feedback, 
+(COUNT(Feedback) * 100.0 / SUM(COUNT(Feedback)) OVER (PARTITION BY Output)) AS Relative_Output
+from PrevTable
+group by  Output, Feedback
+order  by Feedback
